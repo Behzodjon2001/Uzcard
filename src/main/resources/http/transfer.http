@@ -1,0 +1,37 @@
+POST http://localhost:8080/transfer/public/create
+Content-Type: application/json
+
+{
+  "fromCard": "4028d6d1822078bf01822078ea8a0000",
+  "toCard": "4028d6d18220dcb9018220e013370000",
+  "amount": 1000,
+  "companyId": "40282ad1821fc32a01821fc3ebb50001"
+}
+
+###
+
+PUT http://localhost:8080/transfer/public/statusUpdate/402889d18221ff32018221ff65af0000
+
+###
+POST http://localhost:8080/transfer/bankPaymentPayment/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgzOTc4NjksImV4cCI6MTY1ODYxMzg2OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiNDAyODJhZDE4MjFmYzMyYTAxODIxZmMzZWJiNTAwMDEiLCJyb2xlIjoiUk9MRV9CQU5LIn0.o5sZkZQ4m_Uahuhhq-aRwwKwYm6jmdaFj73P5A_SnSg
+
+{
+  "transferId": "8a8a85f182257a580182257b9b850004"
+}
+
+###
+
+GET http://localhost:8080/transfer/public/getTransfer/8a8a85f182257a580182257b9b850004
+
+###
+
+POST http://localhost:8080/transfer/adm/filter
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTg2NDcyOTEsImV4cCI6MTY1ODg2MzI5MSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiNDAyODJhZDE4MjFmYzExNTAxODIxZmMxNDBkZjAwMDAiLCJyb2xlIjoiUk9MRV9BRE1JTiJ9.ChE-a7KI8bm5E0TSWHXAQpzf9DJF0ca3chTzM3CvSa4
+
+{
+  "fromCardId": "4028d6d1822078bf01822078ea8a0000",
+  "toCardId": "4028d6d18220dcb9018220e013370000"
+}

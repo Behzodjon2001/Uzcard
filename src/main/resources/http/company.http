@@ -1,0 +1,38 @@
+POST localhost:8080/company/adm/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgzOTc1ODYsImV4cCI6MTY1ODYxMzU4NiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiNDAyODJhZDE4MjFmYzExNTAxODIxZmMxNDBkZjAwMDAiLCJyb2xlIjoiUk9MRV9BRE1JTiJ9.Vk9xJIk00pFuA19Iszau9uBElREkRAnXCmyJk_RnTLk
+
+{
+  "name": "Apelsin",
+  "username": "apelsin",
+  "password": "777",
+  "address": "Toshkent shahar Shayhontoxur tumani",
+  "contact": "+998920010104",
+  "role": "ROLE_PAYMENT"
+}
+
+###
+
+GET http://localhost:8080/company/adm/list
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgzOTc1ODYsImV4cCI6MTY1ODYxMzU4NiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiNDAyODJhZDE4MjFmYzExNTAxODIxZmMxNDBkZjAwMDAiLCJyb2xlIjoiUk9MRV9BRE1JTiJ9.Vk9xJIk00pFuA19Iszau9uBElREkRAnXCmyJk_RnTLk
+
+
+###
+
+PUT http://localhost:8080/company/adm/update/anorbank
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgzOTc1ODYsImV4cCI6MTY1ODYxMzU4NiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiNDAyODJhZDE4MjFmYzExNTAxODIxZmMxNDBkZjAwMDAiLCJyb2xlIjoiUk9MRV9BRE1JTiJ9.Vk9xJIk00pFuA19Iszau9uBElREkRAnXCmyJk_RnTLk
+
+{
+  "name": "MillyBank",
+  "username": "millybank",
+  "password": "123",
+  "address": "Toshkent shahar uchtepa tumani",
+  "contact": "+998987654777",
+  "role": "ROLE_BANK"
+}
+
+###
+
+DELETE http://localhost:8080/company/adm/delete/4028f5d1821806bd01821807492a0000
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgzOTc1ODYsImV4cCI6MTY1ODYxMzU4NiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiNDAyODJhZDE4MjFmYzExNTAxODIxZmMxNDBkZjAwMDAiLCJyb2xlIjoiUk9MRV9BRE1JTiJ9.Vk9xJIk00pFuA19Iszau9uBElREkRAnXCmyJk_RnTLk

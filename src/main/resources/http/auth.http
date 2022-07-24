@@ -1,0 +1,33 @@
+
+###
+
+POST http://localhost:8080/auth/admBankPay/login
+Content-Type: application/json
+
+{
+  "username": "millybank",
+  "password": "123"
+}
+
+###
+
+POST http://localhost:8080/auth/admBankPay/login
+Content-Type: application/json
+
+{
+  "username": "apelsin",
+  "password": "777"
+}
+
+###
+
+
+POST http://localhost:8080/auth/admBankPay/login
+Content-Type: application/json
+
+{
+  "username": "uz_card_Behzodjon_M",
+  "password": "1255"
+}
+
+###

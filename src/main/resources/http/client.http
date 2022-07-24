@@ -1,0 +1,43 @@
+POST http://localhost:8080/client/bank/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgzODg4OTUsImV4cCI6MTY1ODYwNDg5NSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiOGE4YTg0MmM4MjFhZGYyZjAxODIxYWRmYmMyNDAwMDAiLCJyb2xlIjoiUk9MRV9CQU5LIn0.b3mM7vCKerOf2re1Yx8RUhBmqjveUlAu9rqYETW-CVU
+
+{
+  "name": "Suxrob",
+  "surname": "Suxrob",
+  "phone": "+998972107070",
+  "middleName": "Suxrob",
+  "passwordNumber": "8262462",
+  "passwordSeria": "AB"
+}
+
+###
+
+PUT http://localhost:8080/client/bank/passswordUpdate?passwordNumber=8245696&passwordSeria=AB
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgzODg4OTUsImV4cCI6MTY1ODYwNDg5NSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiOGE4YTg0MmM4MjFhZGYyZjAxODIxYWRmYmMyNDAwMDAiLCJyb2xlIjoiUk9MRV9CQU5LIn0.b3mM7vCKerOf2re1Yx8RUhBmqjveUlAu9rqYETW-CVU
+
+{
+  "name": "Samandar",
+  "surname": "Samandar",
+  "phone": "+998972198989",
+  "middleName": "Saman",
+  "passwordNumber": "8245896",
+  "passwordSeria": "AB"
+}
+
+###
+
+GET localhost:8080/client/bankAdmin/getClient/8a8a842c821b27a601821b27d53f0000
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgyNTg1MjcsImV4cCI6MTY1ODQ3NDUyNywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiOGE4YTg0ODg4MjE3MjJkMDAxODIxNzIyZmE1NTAwMDAiLCJyb2xlIjoiUk9MRV9BRE1JTiJ9.uNzboahODl32_XJGSl9uZn76Bk3A2O8EPsQYrwnnVpQ
+
+
+###
+GET http://localhost:8080/client/bankAdmin/filter
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgzOTc4NjksImV4cCI6MTY1ODYxMzg2OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiNDAyODJhZDE4MjFmYzMyYTAxODIxZmMzZWJiNTAwMDEiLCJyb2xlIjoiUk9MRV9CQU5LIn0.o5sZkZQ4m_Uahuhhq-aRwwKwYm6jmdaFj73P5A_SnSg
+
+{
+  "name": "Dilshod",
+  "surname": "Dilshodov"
+}

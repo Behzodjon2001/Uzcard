@@ -1,0 +1,35 @@
+POST http://localhost:8080/profile/adm/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgzOTAyNjcsImV4cCI6MTY1ODYwNjI2NywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiNDAyODJhZDE4MjFmYzExNTAxODIxZmMxNDBkZjAwMDAiLCJyb2xlIjoiUk9MRV9BRE1JTiJ9.uYjIEdlaV1RXPYux4mMBEBteh3vtsRalysRu_gyZhUU
+
+{
+  "name": "Elbek",
+  "surname": "Elbekov",
+  "username": "uz_card_elbek",
+  "password": "6699",
+  "role": "ROLE_MODERATOR"
+}
+
+###
+
+PUT http://localhost:8080/profile/adm/passswordUpdate/uz_card_elbek
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgzOTAyNjcsImV4cCI6MTY1ODYwNjI2NywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiNDAyODJhZDE4MjFmYzExNTAxODIxZmMxNDBkZjAwMDAiLCJyb2xlIjoiUk9MRV9BRE1JTiJ9.uYjIEdlaV1RXPYux4mMBEBteh3vtsRalysRu_gyZhUU
+
+{
+  "name": "Elbek",
+  "surname": "Elbekov",
+  "username": "uz_card_elbek",
+  "password": "6699",
+  "role": "ROLE_MODERATOR"
+}
+
+###
+
+POST http://localhost:8080/profile/adm/filter
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgzOTAyNjcsImV4cCI6MTY1ODYwNjI2NywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiNDAyODJhZDE4MjFmYzExNTAxODIxZmMxNDBkZjAwMDAiLCJyb2xlIjoiUk9MRV9BRE1JTiJ9.uYjIEdlaV1RXPYux4mMBEBteh3vtsRalysRu_gyZhUU
+
+{
+  "status": "ACTIVE"
+}
